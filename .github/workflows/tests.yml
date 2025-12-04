@@ -73,7 +73,7 @@ jobs:
         run: |
           cd build
           set -e
-          echo "== Test sub 3 -2 ==" > report.txt
+          echo "== Test sub 3 (-2) ==" > report.txt
           ./src/calculator sub 3 -2 | tee -a report.txt
           echo "Exit code: $?" >> report.txt
 
